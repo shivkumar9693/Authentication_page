@@ -56,6 +56,6 @@ app.post('/forgot-password', async (req, res) => {
     res.send('Password reset link has been sent to your email.');
 });
 
-// Start server
+// Start server on port 3000
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
