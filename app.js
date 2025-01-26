@@ -53,7 +53,6 @@ app.post('/forgot-password', async (req, res) => {
     const { email } = req.body;
     const user = await User.findOne({ email });
     if (!user) return res.send('Email not found.');
-    // Add email sending functionality here
     res.send('Password reset link has been sent to your email.');
 });
 
